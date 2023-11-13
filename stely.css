@@ -1,30 +1,31 @@
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* definir a fonte */
+  margin: 0; /* é utilizada para definir o espaço em branco ao redor de um elemento HTML */
+  padding: 0; /*  é usada para definir o espaço de preenchimento dentro de um elemento HTML */
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1200px; /* é usada para definir a largura máxima de um elemento HTML */
   margin: 0 auto;
   padding: 20px;
+  text-align: center; /* é usada para definir o alinhamento horizontal do texto dentro de um elemento HTML */
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 24px; /*  é usada para definir o tamanho da fonte do texto dentro de um elemento HTML */
+  margin-bottom: 10px; /* é usada para definir a margem inferior de um elemento HTML */
 }
 
 h2 {
   font-size: 18px;
-  margin-top: 0;
+  margin-top: 0; /*  é usada para definir a margem superior de um elemento HTML */
 }
 
 .button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: #007bff; /* é usada para definir a cor de fundo de um elemento HTML */
+  color: #fff; /*é usada para definir a cor do texto dentro de um elemento HTML*/
+  border: none; /* é usada para definir uma borda ao redor de um elemento HTML */
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -39,13 +40,14 @@ h2 {
 .logo {
   font-size: 24px;
   font-weight: bold;
+  text-align: center; /* é usada para definir o alinhamento horizontal do texto dentro de um elemento HTML */
 }
 
 /* Cardápio */
 .linha-cardapio {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* é usada em contêineres flexíveis para definir se os itens filhos devem ser dispostos em uma única linha ou se eles podem quebrar para várias linhas, caso não caibam na linha atual.*/
+  justify-content: space-evenly; /*  é usada em contêineres flexíveis para alinhar e distribuir os itens filhos horizontalmente ao longo do eixo principal do contêiner */
 }
 
 .cardapio-item {
