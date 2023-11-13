@@ -1,112 +1,113 @@
-/* Estilos gerais */
-body {
-  font-family: Arial, sans-serif; /* definir a fonte */
-  margin: 0; /* é utilizada para definir o espaço em branco ao redor de um elemento HTML */
-  padding: 0; /*  é usada para definir o espaço de preenchimento dentro de um elemento HTML */
-}
 
-.container {
-  max-width: 1200px; /* é usada para definir a largura máxima de um elemento HTML */
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center; /* é usada para definir o alinhamento horizontal do texto dentro de um elemento HTML */
-}
+<!DOCTYPE html> <!--vai dizer que o tipo do documento ele é html e falar qual versão-->
+<html lang="pt-br"> <!--em qual linguagem ele vai estar-->
 
-h1 {
-  font-size: 24px; /*  é usada para definir o tamanho da fonte do texto dentro de um elemento HTML */
-  margin-bottom: 10px; /* é usada para definir a margem inferior de um elemento HTML */
-}
+<!-- nessa parte head é a parte do cabeçalho da pagina-->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-h2 {
-  font-size: 18px;
-  margin-top: 0; /*  é usada para definir a margem superior de um elemento HTML */
-}
+    <title>Cadastro</title> <!--titulo que aparecera na aba da pagina-->
+</head>
+   <header class="cabeçalho">
+    <h1 class="logo">Restaurante</h1> <!-- cabeçalho do site -->
+  </header>
+ 
+  			<!-- INICIO PRATOS -->
+  
+  <div class="container">
+    <h2>Pratos</h2>
+    <div class="linha-cardapio">
+      <div class="cardapio-item">
+         <img src="img/prato.jpeg" alt="" class="prato"/> <!-- tag img para chamar a imagem -->
+        <h3 class="titulo">Bisteca</h3>
+        <p class="descricao">Arroz,Batatas Fritas, Farofa, Feijão e Purê, Couve e Salada.</p>
+        <div class="preco">R$ 00,00</div>
+        <div class="quantidade">  <!-- é usada para criar um contêiner para os elementos relacionados à quantidade de um item -->
+          <button class="decrementar">-</button> <!--é um botão usado para diminuir a quantidade de um item -->
+         
+          <input type="number" value="1" min="1" max="10"> <!-- é um campo de entrada numérico. Ele permite ao usuário selecionar um valor numérico para representar a quantidade de um item-->
+          <button class="incrementar">+</button> <!--é um botão usado para aumentar a quantidade de um item-->
+        </div>
+        <button class="adicionar">Adicionar ao carrinho</button> <!-- é um botão usado para adicionar o item ao carrinho de compras-->
+      </div>
 
-.button {
-  background-color: #007bff; /* é usada para definir a cor de fundo de um elemento HTML */
-  color: #fff; /*é usada para definir a cor do texto dentro de um elemento HTML*/
-  border: none; /* é usada para definir uma borda ao redor de um elemento HTML */
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
+      <div class="cardapio-item">
+       <img src="img/prato.jpeg" alt="" class="prato"/>
+        <h3 class="titulo">Carne de Sol</h3>
+        <p class="descricao">Arroz, Tropeiro, Vinagrete e Fritas</p>
+        <div class="preco">R$ 00,00</div>
+        <div class="quantidade">
+          <button class="decrementar">-</button>
+          <input type="number" value="1" min="1" max="10">
+          <button class="incrementar">+</button>
+        </div>
+        <button class="adicionar">Adicionar ao carrinho</button>
+      </div>
+        
+        <div class="cardapio-item">
+       <img src="img/prato.jpeg" alt="" class="prato"/>
+        <h3 class="titulo">Filé de Tilápia</h3>
+        <p class="descricao">Arroz, Batatas Fritas, Feijão e Purê.</p>
+        <div class="preco">R$ 00,00</div>
+        <div class="quantidade">
+          <button class="decrementar">-</button>
+          <input type="number" value="1" min="1" max="10">
+          <button class="incrementar">+</button>
+        </div>
+        <button class="adicionar">Adicionar ao carrinho</button>
+      </div>
+          
+          <div class="cardapio-item">
+       <img src="img/prato.jpeg" alt="" class="prato"/>
+        <h3 class="titulo"> Filé Grelhado</h3>
+        <p class="descricao">Arroz, Legumes ao Vapor, Feijão e Purê.</p>
+        <div class="preco">R$ 00,00</div>
+        <div class="quantidade">
+          <button class="decrementar">-</button>
+          <input type="number" value="1" min="1" max="10">
+          <button class="incrementar">+</button>
+        </div>
+        <button class="adicionar">Adicionar ao carrinho</button>
+      </div>
+            
+             <!-- FIM PRATOS --> 
 
-/* Cabeçalho */
-.cabeçalho {
-  background-color: #f4f4f4;
-  padding: 20px;
-}
+      		<!-- INICIO BEBIDAS -->
+    </div>
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center; /* é usada para definir o alinhamento horizontal do texto dentro de um elemento HTML */
-}
+    <h2>Bebidas</h2>
+    <div class="linha-cardapio">
+      <div class="cardapio-item">
+        <img src="img/prato.jpeg" alt="" class="prato"/>
+        <h3 class="titulo">Bebida 1</h3>
+        <p class="descricao">Descrição da Bebida 1.</p>
+        <div class="preco">R$ 5,00</div>
+        <div class="quantidade">
+          <button class="decrementar">-</button>
+          <input type="number" value="1" min="1" max="10">
+          <button class="incrementar">+</button>
+        </div>
+        <button class="adicionar">Adicionar ao carrinho</button>
+      </div>
 
-/* Cardápio */
-.linha-cardapio {
-  display: flex;
-  flex-wrap: wrap; /* é usada em contêineres flexíveis para definir se os itens filhos devem ser dispostos em uma única linha ou se eles podem quebrar para várias linhas, caso não caibam na linha atual.*/
-  justify-content: space-evenly; /*  é usada em contêineres flexíveis para alinhar e distribuir os itens filhos horizontalmente ao longo do eixo principal do contêiner */
-}
-
-.cardapio-item {
-  width: 300px;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.prato {
-  width: 100%;
-  max-width: 200px;
-  border: 1px solid #ccc;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.titulo {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.descricao {
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.preco {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.quantidade {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.quantidade input {
-  width: 40px;
-  text-align: center;
-  margin: 0 5px;
-}
-
-.adicionar {
-  background-color: #28a745;
-  margin-top: 10px;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Botão adicionar */
-.center {
-  text-align: center;
-  margin-top: 20px;
-}
+      <div class="cardapio-item">
+       <img src="img/prato.jpeg" alt="" class="prato"/>
+         <h3 class="titulo">Bebida </h3>
+        <p class="descricao">Descrição da Bebida .</p>
+        <div class="preco">R$ 3,00</div>
+        <div class="quantidade">
+          <button class="decrementar">-</button>
+          <input type="number" value="1" min="1" max="10">
+          <button class="incrementar">+</button>
+        </div>
+        <button class="adicionar">Adicionar ao carrinho</button>
+      </div>
+                     
+    </div>
+  </div>
+                            <!-- FIM BEBIDAS -->
+  
+</body>
+</html>
