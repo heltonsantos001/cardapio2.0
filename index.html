@@ -1,29 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Cardápio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="cabeçalho">
-    <h1 class="logo">Restaurante</h1>
-  </header>
+<!DOCTYPE html> <!--vai dizer que o tipo do documento ele é html e falar qual versão-->
+<html lang="pt-br"> <!--em qual linguagem ele vai estar-->
 
+<!-- nessa parte head é a parte do cabeçalho da pagina-->
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title> <!--titulo que aparecera na aba da pagina-->
+</head>
+   <header class="cabeçalho">
+    <h1 class="logo">Restaurante</h1> <!-- cabeçalho do site -->
+  </header>
+ 
+  			<!-- INICIO PRATOS -->
+  
   <div class="container">
     <h2>Pratos</h2>
     <div class="linha-cardapio">
       <div class="cardapio-item">
-         <img src="img/prato.jpeg" alt="" class="prato"/>
+         <img src="img/prato.jpeg" alt="" class="prato"/> <!-- tag img para chamar a imagem -->
         <h3 class="titulo">Prato 1</h3>
         <p class="descricao">Descrição do Prato 1.</p>
         <div class="preco">R$ 15,00</div>
-        <div class="quantidade">
-          <button class="decrementar">-</button>
-          <input type="number" value="1" min="1" max="10">
-          <button class="incrementar">+</button>
+        <div class="quantidade">  <!-- é usada para criar um contêiner para os elementos relacionados à quantidade de um item -->
+          <button class="decrementar">-</button> <!--é um botão usado para diminuir a quantidade de um item -->
+         
+          <input type="number" value="1" min="1" max="10"> <!-- é um campo de entrada numérico. Ele permite ao usuário selecionar um valor numérico para representar a quantidade de um item-->
+          <button class="incrementar">+</button> <!--é um botão usado para aumentar a quantidade de um item-->
         </div>
-        <button class="adicionar">Adicionar ao carrinho</button>
+        <button class="adicionar">Adicionar ao carrinho</button> <!-- é um botão usado para adicionar o item ao carrinho de compras-->
       </div>
 
       <div class="cardapio-item">
@@ -65,9 +71,9 @@
         <button class="adicionar">Adicionar ao carrinho</button>
       </div>
             
-            
+             <!-- FIM PRATOS --> 
 
-      <!-- Adicione mais itens de cardápio aqui -->
+      		<!-- INICIO BEBIDAS -->
     </div>
 
     <h2>Bebidas</h2>
@@ -97,11 +103,10 @@
         </div>
         <button class="adicionar">Adicionar ao carrinho</button>
       </div>
-
-      <!-- Adicione mais itens de bebidas aqui -->
+                     
     </div>
   </div>
-
- 
+                            <!-- FIM BEBIDAS -->
+  
 </body>
 </html>
