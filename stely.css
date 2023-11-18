@@ -3,12 +3,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+ 
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+.categoria{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -55,6 +61,13 @@ h2 {
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 2px 2px 7px rgba(106, 105, 105, 0.214);
+  transition: .5s;
+}
+.cardapio-item:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 5px 5px 15px  #3030303c;
+
 }
 
 .prato {
@@ -71,7 +84,7 @@ h2 {
 }
 
 .descricao {
-  color: #666;
+  color: #a39f9f;
   margin-bottom: 10px;
 }
 
@@ -94,9 +107,10 @@ h2 {
 }
 
 .adicionar {
-  background-color: #28a745;
+  background-color: #18bc06;
+  border: none;
   margin-top: 10px;
-  color: white;
+  color: #000000;
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 5px;
