@@ -5,7 +5,7 @@
 
   <!-- nessa parte head é a parte do cabeçalho da pagina-->
   <head>
-    <link rel="stylesheet" href="./stely.css">
+    <link rel="stylesheet" href="./stely.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -22,9 +22,9 @@
     <!-- INICIO PRATOS -->
 
     <div class="container">
-      <div class="categoria"> <h2>Pratos</h2></div>
+      <div class="categoria"><h2>Pratos</h2></div>
       <div class="linha-cardapio">
-        <div class="cardapio-item" id="prato0" >
+        <div class="cardapio-item" id="prato0">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <!-- tag img para chamar a imagem -->
           <h3 class="titulo">Bisteca</h3>
@@ -42,7 +42,9 @@
             <button class="incrementar">+</button>
             <!--é um botão usado para aumentar a quantidade de um item-->
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('prato0')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('prato0')">
+            Adicionar ao carrinho
+          </button>
           <!-- é um botão usado para adicionar o item ao carrinho de compras-->
         </div>
 
@@ -50,26 +52,30 @@
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Carne de Sol</h3>
           <p class="descricao">Arroz, Tropeiro, Vinagrete e Fritas</p>
-         <div class="preco">R$ <span>00,00</span></div>
+          <div class="preco">R$ <span>00,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('prato1')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('prato1')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="prato2">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Filé de Tilápia</h3>
           <p class="descricao">Arroz, Batatas Fritas, Feijão e Purê.</p>
-         <div class="preco">R$ <span>00,00</span></div>
+          <div class="preco">R$ <span>00,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('prato2')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('prato2')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="prato3">
@@ -82,7 +88,9 @@
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('prato3')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('prato3')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="prato4">
@@ -95,54 +103,61 @@
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('prato4')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('prato4')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="prato5">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Ling. Toscana</h3>
           <p class="descricao">Arroz,Farofa de Ovo, Couve e Salada.</p>
-         <div class="preco">R$ <span>00,00</span></div>
+          <div class="preco">R$ <span>00,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('prato5')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('prato5')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <!-- FIM PRATOS -->
 
         <!-- INICIO BEBIDAS -->
       </div>
-      <div class="categoria"> <h2>Bebidas</h2></div>
+      <div class="categoria"><h2>Bebidas</h2></div>
 
-     
       <div class="linha-cardapio" id="bebidas1">
         <div class="cardapio-item">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Bebida 1</h3>
           <p class="descricao">Descrição da Bebida 1.</p>
-        <div class="preco">R$ <span>5,00</span></div>
+          <div class="preco">R$ <span>5,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar"  onclick="adicionarAoCarrinho('bebidas1')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas1')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="bebidas2">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Bebida</h3>
           <p class="descricao">Descrição da Bebida .</p>
-         <div class="preco">R$ <span>3,00</span></div>
+          <div class="preco">R$ <span>3,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas2')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas2')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="bebidas3">
@@ -155,33 +170,39 @@
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar"  onclick="adicionarAoCarrinho('bebidas3')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas3')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="bebidas4">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Bebida</h3>
           <p class="descricao">Descrição da Bebida .</p>
-         <div class="preco">R$ <span>3,00</span></div>
+          <div class="preco">R$ <span>3,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar"  onclick="adicionarAoCarrinho('bebidas4')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas4')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="bebidas5">
           <img src="img/prato.jpeg" alt="" class="prato" />
           <h3 class="titulo">Bebida</h3>
           <p class="descricao">Descrição da Bebida .</p>
-         <div class="preco">R$ <span>3,00</span></div>
+          <div class="preco">R$ <span>3,00</span></div>
           <div class="quantidade">
             <button class="decrementar">-</button>
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar"  onclick="adicionarAoCarrinho('bebidas5')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas5')">
+            Adicionar ao carrinho
+          </button>
         </div>
 
         <div class="cardapio-item" id="bebidas6">
@@ -194,11 +215,36 @@
             <input type="number" value="1" min="1" max="10" />
             <button class="incrementar">+</button>
           </div>
-          <button class="adicionar"  onclick="adicionarAoCarrinho('bebidas6')">Adicionar ao carrinho</button>
+          <button class="adicionar" onclick="adicionarAoCarrinho('bebidas6')">
+            Adicionar ao carrinho
+          </button>
         </div>
       </div>
     </div>
     <!-- FIM BEBIDAS -->
+    <div id="containerCar">
+      <div id="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-cart2"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+          />
+        </svg>
+
+      </div>
+      <div id="spaceCar">
+        <img src="" alt="foto do produto" />
+        <h1>name</h1>
+        <h1>quantidade</h1>
+        <h1>valor</h1>
+      </div>
+    </div>
 
     <script src="./carrinho.js"></script>
   </body>
