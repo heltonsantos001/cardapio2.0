@@ -40,14 +40,29 @@ const adicionarAoCarrinho = (itemId) => {
     const preco = parseFloat(precoText)
 
     const newProco = preco * quantidade
-    
+
     const produto = {
         titulo,
         descricao,
         preco: newProco,
         quantidade,
     }
-    console.log(produto)
+    const listaCarrinho = document.getElementById("listaCarrinho");
+    const name = document.createElement('h1');
+    const quantidadetext = document.createElement('h1');
+    const valortext = document.createElement('h1');
+    const Container = document.createElement('div');
+
+    name.innerHTML = titulo;
+    quantidadetext.innerHTML = quantidade
+    valortext.innerHTML = newProco
+
+
+    Container.appendChild(name);
+    Container.appendChild(quantidadetext);
+    Container.appendChild(valortext);
+    listaCarrinho.appendChild(Container);
+
 
 
 };

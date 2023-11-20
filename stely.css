@@ -143,16 +143,24 @@ h2 {
 #spaceCar {
   width: 130px;
   margin-left: 50px;
-  border: 1px solid black;
   text-align: center;
 }
+#listaCarrinho{
+margin: 10px 0;
 
-#spaceCar > h1{
+}
+#listaCarrinho > div{
+border: 1px solid black;
+margin: 10px 0;
+}
+
+#listaCarrinho > div > h1{
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   margin:0;
   padding: 2px 0;
+ 
 }
 
 #icon{
